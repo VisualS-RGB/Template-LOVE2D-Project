@@ -1,6 +1,6 @@
 love.graphics.setDefaultFilter("nearest", "nearest") -- Setup texture filter mode.
 
--- Global libraries:
+-- Libraries:
 Push = require"libraries.push" -- Resolution configuration.
 
 -- Setup push:
@@ -18,12 +18,12 @@ Anim8 = require"libraries.anim8" -- Compatibility with SpriteSheets animations.
 Gamera = require"libraries.gamera" -- Cameras.
 Windfield = require"libraries.windfield" -- Physics System.
 
--- Global managers:
+-- Managers:
 SceneManager = require"source.managers.sceneManager"
 AudioManager = require"source.managers.audioManager"
 Debug = require"source.debug"
 
--- Global parameters:
+-- Parameters:
 TimeScale = 1
 
 -- Init:

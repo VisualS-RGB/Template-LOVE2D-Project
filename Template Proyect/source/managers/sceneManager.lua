@@ -4,7 +4,6 @@ local sceneManager = {
     scenes = {
         -- Game scenes:
         TemplateScene = require(scenesPath .. "templateScene"),
-        TemplateScene2 = require(scenesPath .. "templateScene2"),
     },
 }
 
