@@ -19,6 +19,7 @@ function love.draw()
     -- Draw static BG color:
     love.graphics.setColor(love.math.colorFromBytes(50, 0, 230))
     love.graphics.rectangle("fill", 0, 0, Push:getWidth(), Push:getHeight())
+    love.graphics.setColor(1, 1, 1, 1)
 
     SceneManager:draw()
     Debug:draw()
