@@ -1,6 +1,8 @@
 local debug = {
     debugMenu = false,
 
+    text = "",
+
     leftTexts = {},
     rightTexts = {},
 }
@@ -15,7 +17,7 @@ function debug:update()
     self.leftTexts = {
         "Debug Panel UwU",
         "FPS: " .. tostring(love.timer.getFPS()),
-        "",
+        "Text: " ..tostring(self.text),
         "U can print data here ;)",
     }
 
