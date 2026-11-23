@@ -3,12 +3,17 @@ Push = require"libraries.push"
 love.graphics.setDefaultFilter("nearest", "nearest") -- Setup texture filter mode.
 Push:setupScreen(
     320, 240, -- Fixed resolution.
-    640, 480, -- Real resolution.
+    love.graphics.getWidth(), love.graphics.getHeight(), -- Real resolution.
     {
         fullscreen = false,
         resizable = false,
+        highdpi = true
     }
 )
+
+print(love.window.getMode())
+print(love.window.getDPIScale())
+print(love.window.getDesktopDimensions())
 
 -- Global:
 -- Managers:
