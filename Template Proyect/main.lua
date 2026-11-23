@@ -3,7 +3,7 @@ Push = require"libraries.push"
 love.graphics.setDefaultFilter("nearest", "nearest") -- Setup texture filter mode.
 Push:setupScreen(
     320, 240, -- Fixed resolution.
-    1280, 720, -- Real resolution.
+    640, 480, -- Real resolution.
     {
         fullscreen = false,
         resizable = false,
@@ -35,7 +35,7 @@ function love.draw()
 
     -- Draw static BG color:
     love.graphics.setColor(love.math.colorFromBytes(50, 0, 230))
-    --love.graphics.rectangle("fill", 0, 0, Push:getWidth(), Push:getHeight())
+    love.graphics.rectangle("fill", 0, 0, Push:getWidth(), Push:getHeight())
     love.graphics.setColor(1, 1, 1, 1)
 
     SceneManager:draw()
