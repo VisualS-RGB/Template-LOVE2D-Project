@@ -720,6 +720,7 @@ function Collider.new(world, collider_type, ...)
     elseif self.type == 'BSGRectangle' then
         self.collision_class = (args[6] and args[6].collision_class) or 'Default'
         self.body = love.physics.newBody(self.world.box2d_world, args[1] + args[3]/2, args[2] + args[4]/2, (args[6] and args[6].body_type) or 'dynamic')
+        self.body:setFixedRotation(not (args[6] and args[6].enable_rotation))
         local w, h, s = args[3], args[4], args[5]
         shape = love.physics.newPolygonShape({
             -w/2, -h/2 + s, -w/2 + s, -h/2,
@@ -951,4 +952,3 @@ wf.World = World
 wf.Collider = Collider
 
 return wf
-
