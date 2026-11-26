@@ -1,7 +1,6 @@
 local Colors = require"libraries.colors"
 
 local scene = {}
-local joysticks = {}
 
 function scene:load()
 end

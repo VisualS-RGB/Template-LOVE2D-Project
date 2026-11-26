@@ -11,10 +11,6 @@ Push:setupScreen(
     }
 )
 
-print(love.window.getMode())
-print(love.window.getDPIScale())
-print(love.window.getDesktopDimensions())
-
 -- Global:
 -- Managers:
 SceneManager = require"source.managers.sceneManager"
