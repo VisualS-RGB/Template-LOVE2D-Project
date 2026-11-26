@@ -1,4 +1,4 @@
-local baton = {
+local baton = { -- 1.0.4
 	_VERSION = 'Baton v1.0.2',
 	_DESCRIPTION = 'Input library for LÖVE.',
 	_URL = 'https://github.com/tesselode/baton',
